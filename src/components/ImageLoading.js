@@ -21,6 +21,7 @@ class ImageLoading extends React.Component {
             <View style={{ justifyContent: 'center' }}>
                 <FastImage
                     style={{ width: this.props.width, height: this.props.height }} source={source}
+                    resizeMode={FastImage.resizeMode.contain}
                     onLoad={() => { this.setState({ showLoading: false, showPlaceholder: false }) }}
                     onError={() => { this.setState({ showLoading: false, showPlaceholder: true }) }} />
                 {this.state.showPlaceholder && (
