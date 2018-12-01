@@ -94,7 +94,7 @@ class ProductsScreen extends React.Component {
 
         return (
             <View style={{ padding: 8, backgroundColor: 'white' }}>
-                <ActivityIndicator style={{ alignSelf: 'center' }} size={'small'} color={colors.primary} indeterminate={true} />
+                <ActivityIndicator style={{ alignSelf: 'center' }} size={'large'} color={colors.primary} indeterminate={true} />
             </View>
         )
     }
